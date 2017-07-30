@@ -1,0 +1,14 @@
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\bin\Debug\OhmsLaw.exe.config
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\bin\Debug\OhmsLaw.exe
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\bin\Debug\OhmsLaw.pdb
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\OhmsLaw.csprojResolveAssemblyReference.cache
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\MainWindow.g.cs
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\App.g.cs
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\OhmsLaw_MarkupCompile.cache
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\OhmsLaw_MarkupCompile.lref
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\MainWindow.baml
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\OhmsLaw.g.resources
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\OhmsLaw.Properties.Resources.resources
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\OhmsLaw.csproj.GenerateResource.Cache
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\OhmsLaw.exe
+C:\Users\Nurs\Documents\Visual Studio 2017\Projects\MiniPrograms\OhmsLaw\OhmsLaw\obj\Debug\OhmsLaw.pdb
