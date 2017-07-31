@@ -15,15 +15,14 @@ using System.Windows.Shapes;
 
 namespace OhmsLaw
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
+    
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
 
+            // изначально выбрана радиокнопка для расчёта тока
             cbAmps.IsChecked = true;
             cbOhmParralel.IsChecked = false;
             cbOhms.IsChecked = false;
@@ -31,39 +30,52 @@ namespace OhmsLaw
             cbVolts.IsChecked = false;
         }
 
+        // создаём экземпляр класса 
         OhmLaw ohm = new OhmLaw();
 
          
     private void btn_math_Click(object sender, RoutedEventArgs e)
         {
+            // инструкции для нажатия кнопки "Расчитать"
+            // если выбран расчёт тока
             if(cbAmps.IsChecked == true)
             {
-               
+               // то вызываем метод класса и присваиваем его значение в метку
                 lbl_finish_answer.Content = ohm.Amper(Convert.ToDouble(textBoxFirst.Text), Convert.ToDouble(textBoxSecond.Text)).ToString() ;
             }
 
+            // если выбран расчёт напряжения
             else if (cbVolts.IsChecked == true)
             {
-
+                // то вызываем метод класса и присваиваем его значение в метку
                 lbl_finish_answer.Content = ohm.Volt(Convert.ToDouble(textBoxFirst.Text), Convert.ToDouble(textBoxSecond.Text)).ToString();
             }
+
+            // если выбран расчёт последовательного сопротивления 
             else if (cbOhmsPos.IsChecked == true)
             {
-
+                // то вызываем метод класса и присваиваем его значение в метку
                 lbl_finish_answer.Content = ohm.OhmPos(Convert.ToDouble(textBoxFirst.Text), Convert.ToDouble(textBoxSecond.Text)).ToString();
             }
+
+            // если выбран расчёт параллельного сопротивления
             else if (cbOhmParralel.IsChecked == true)
             {
-
+                // то вызываем метод класса и присваиваем его значение в метку
                 lbl_finish_answer.Content = ohm.OhmsParralel(Convert.ToDouble(textBoxFirst.Text), Convert.ToDouble(textBoxSecond.Text)).ToString();
             }
+
+            // если выбран расчёт сопротивления
             else if (cbOhms.IsChecked == true)
             {
-
+                // то вызываем метод класса и присваиваем его значение в метку
                 lbl_finish_answer.Content = ohm.Ohms(Convert.ToDouble(textBoxFirst.Text), Convert.ToDouble(textBoxSecond.Text)).ToString();
             }
+
+            // если не выбрано ничего или больше одного элемента ( чего не должно быть )
             else
             {
+                // вывести сообщение об ошибке
                 MessageBox.Show("Неправильно выбраны параметры, убедитесь что всё выбрано правильно и повторите ещё раз.");
             }
             
@@ -71,7 +83,9 @@ namespace OhmsLaw
 
         private void cbAmps_Checked(object sender, RoutedEventArgs e)
         {
-           
+                // инструкции для выбранного CheckBox'a 
+                // присваиваем остальным статус false
+                // скрываем метки которые нам не нужны и делаем видимыми те, которые нужно использовать
                 cbOhmParralel.IsChecked = false;
                 cbOhms.IsChecked = false;
                 cbOhmsPos.IsChecked = false;
@@ -96,6 +110,10 @@ namespace OhmsLaw
 
         private void cbVolts_Checked(object sender, RoutedEventArgs e)
         {
+            // инструкции для выбранного CheckBox'a 
+            // присваиваем остальным статус false
+            // скрываем метки которые нам не нужны и делаем видимыми те, которые нужно использовать
+
             cbAmps.IsChecked = false;
             cbOhmParralel.IsChecked = false;
             cbOhms.IsChecked = false;
@@ -118,6 +136,10 @@ namespace OhmsLaw
 
         private void cbOhms_Checked(object sender, RoutedEventArgs e)
         {
+            // инструкции для выбранного CheckBox'a 
+            // присваиваем остальным статус false
+            // скрываем метки которые нам не нужны и делаем видимыми те, которые нужно использовать
+
             cbAmps.IsChecked = false;
             cbOhmParralel.IsChecked = false;
             cbOhmsPos.IsChecked = false;
@@ -140,6 +162,10 @@ namespace OhmsLaw
 
         private void cbOhmParralel_Checked(object sender, RoutedEventArgs e)
         {
+            // инструкции для выбранного CheckBox'a 
+            // присваиваем остальным статус false
+            // скрываем метки которые нам не нужны и делаем видимыми те, которые нужно использовать
+
             cbAmps.IsChecked = false;
             cbOhms.IsChecked = false;
             cbOhmsPos.IsChecked = false;
@@ -162,6 +188,10 @@ namespace OhmsLaw
 
         private void cbOhmsPos_Checked(object sender, RoutedEventArgs e)
         {
+            // инструкции для выбранного CheckBox'a 
+            // присваиваем остальным статус false
+            // скрываем метки которые нам не нужны и делаем видимыми те, которые нужно использовать
+
             cbAmps.IsChecked = false;
             cbOhmParralel.IsChecked = false;
             cbOhms.IsChecked = false;
